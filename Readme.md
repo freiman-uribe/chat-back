@@ -2,35 +2,35 @@
 
 Este proyecto es un backend para un sistema de chat en streaming, construido con Node.js utilizando una arquitectura hexagonal (puertos y adaptadores). La API incluye autenticación de usuarios y un sistema de chat en tiempo real utilizando Socket.io.
 
-src/ ├── application/ 
-     │ ├── services/ 
-     │ │ └── AuthService.js 
-     │ │ └── ChatService.js 
-     ├── domain/ 
-     │ ├── models/ 
-     │ │ └── Message.js 
-     │ │ └── User.js 
-     │ ├── repositories/ 
-     │ │ └── MessageRepository.js 
-     │ │ └── UserRepository.js 
-     ├── infrastructure/ 
-     │ ├── config/ 
-     │ │ └── connectMongo.js 
-     │ ├── middleware/ 
-     │ │ └── auth.js 
-     │ ├── routes/ 
-     │ │ └── authRoutes.js 
-     │ │ └── chatRoutes.js 
-     │ ├── server.js 
-     │ ├── socket.js 
-     ├── adapters/ 
-     │ ├── controllers/ 
-     │ │ └── AuthController.js 
-     │ │ └── ChatController.js 
-     │ ├── repositories/ 
-     │ │ └── MessageRepositoryImpl.js 
-     │ │ └── UserRepositoryImpl.js
-
+src/
+├── application/
+│   ├── services/
+│   │   └── AuthService.js
+│   │   └── ChatService.js
+├── domain/
+│   ├── models/
+│   │   └── Message.js
+│   │   └── User.js
+│   ├── repositories/
+│   │   └── MessageRepository.js
+│   │   └── UserRepository.js
+├── infrastructure/
+│   ├── config/
+│   │   └── connectMongo.js
+│   ├── middleware/
+│   │   └── auth.js
+│   ├── routes/
+│   │   └── authRoutes.js
+│   │   └── chatRoutes.js
+│   ├── server.js
+│   ├── socket.js
+├── adapters/
+│   ├── controllers/
+│   │   └── AuthController.js
+│   │   └── ChatController.js
+│   ├── repositories/
+│   │   └── MessageRepositoryImpl.js
+│   │   └── UserRepositoryImpl.js
 
 ## Requisitos
 
